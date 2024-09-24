@@ -1,0 +1,24 @@
+#entire_feed{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    align-items:center;
+}
+
+.goleft, .goright{
+    width:200px;
+    height:200px;
+    filter:brightness(0.8) contrast(1.5);
+    cursor: pointer;
+    margin:40px;
+    transition:transform 0.3s ease;
+}
+
+.goright:hover, .goleft:hover{ 
+    filter:brightness(0.6) contrast(1.5);
+    transform: scale(1.1);
+}
+
+.goright:active, .goleft:active{
+    filter:brightness(0.1) contrast(1.5);
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Gallery</title>
+
+    <!--
+        This code below was taken from google fonts
+        https://fonts.google.com/selection/embed
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   
+   
+   
+    <link href="./style/main.css" rel="stylesheet" type="text/css" />
+    <link href="./style/dropdown.css" rel="stylesheet" type="text/css" />
+    <link href="./style/header.css" rel="stylesheet" type="text/css"/>
+    <link href="./style/photobox.css" rel="stylesheet" type="text/css"/>
+    <link href="./style/comments.css" rel="stylesheet" type = "text/css">
+    <link href="./style/feed.css" rel="stylesheet" type="text/css">
+    <link href="./style/comment_form.css" rel="stylesheet" type="text/css"/>
+    <link href="./style/commentmoving.css" rel="stylesheet" type="text/css"/>
+
+    <script type="module" src="./js/frontend.mjs" defer></script>
+  </head>
+
+
+  <body>
+    <header id="Gallery">
+        <div class="container">
+            <div class="box1">
+                <p id="popdown_start">Add Image</p>
+                <div id="popdown_form" class="popdown_form">
+                    <form id="AddImageForm">
+                        <input type="text" id="image_title" class="popdown_form_element" placeholder="Enter Title" name="image_name" required>
+                        <input type="text" id="image_author" class="popdown_form_element" placeholder="Enter Author" name="image_user" required>
+                        <input type="text" id="image_actual" class="popdown_form_element" placeholder="Enter URL" name="image_url" required>
+                        <button type="submit">Upload</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box2">
+                Gallery
+             </div>
+            <div class="box3">
+                <a href="./credits.html" target="_blank">Credits</a>
+            </div>
+        </div>
+    </header>
+    
+    
+
+    <div id="entire_feed">
+            <div class="ButtonImageDirc" ><img class="goleft" src="./media/left.png"></div>
+
+            <div id = "photogallery">
+                <div class="photoholder">
+                    <div id="photocontainer">
+                        <!--<div class="photohelpercontainer">
+                            <div class="photourl_box" data-imageId = "123">
+                                <img src="https://res.cloudinary.com/usopc-prod/image/upload/v1713551450/TeamUSA%20Assets/Migration/Athlete%20Profiles/Stephen%20Curry%20997380/Curry_s_bio_997380.jpg" alt="Photo by this person" class="photo">
+                            </div>
+                            <div class="photo_author">Stephen curry</div>
+                            <div class="image_title">Stephen Curry Glaze</div>
+                        </div>-->
+                    </div>
+                    
+                    <div class="addComment">
+                        <form id="addcommentform" class="Comment_form">
+                            <input type="text" id="comment_author" class="comment_form_element" placeholder="Enter Your name" name="user_name" required>
+                            <input type="text" id="comment_content" class="comment_form_element" placeholder="Message" required>
+                            <button type="submit" class="comment_btn"></button>
+                        </form>
+                    </div>
+                    <div class = "comments_switch">
+                        <div class="past_10"></div>
+                        <div class="comments_go_next">Next Comments</div>
+                        <div class="next_10"></div>
+                    </div>
+                    <div id="comments">
+                        <!--<div class="comment" data-commentId = "123">
+                            <div class="comment_author">peter Yoo</div>
+                            <div class="comment_content_container">
+                                <div class="comment_content">HES ACTUALLY THE GOAT</div>
+                            </div>
+                           
+                            <div class="comment_date">April 21,2005</div>
+                            <div id = "delete" class="delete" icon></div>
+                        </div>-->   
+                    </div>
+                </div>
+            <div class="ButtonImageDirc"> <img class="goright" src="./media/right.png"> </div>
+    </div>
+    
+    <div class="deleteImage">
+        <p>Delete Image?</p>
+        <div id = "deleteimage_icon" class="deleteimage_icon"></div>
+    </div>
+  </body>
+</html>

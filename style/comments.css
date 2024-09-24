@@ -1,0 +1,66 @@
+#comments{
+    display:flex;
+    flex-direction:column;
+    background:none;
+    align-items:center;
+}
+
+.comment{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    background:none;
+    padding:10px;
+}
+
+.comment_author{
+    margin-left:10px;
+    margin-right: 10px;
+}
+.comment_content_container {
+    flex-grow: 1;
+    background:none;
+    margin-right: 10px; 
+}
+
+.comment_content {
+    display: flex;
+    background:none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden; 
+    transition:transform 0.3 ease;
+}
+
+.comment_date{
+    margin-right:10px;
+    overflow:hidden;
+
+}
+
+.delete{
+    width:30px;
+    height:30px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:100%;
+    cursor:pointer;
+    background-image:url("../media/delete-icon.png");
+    margin-right:5px;
+    transition:transform 0.3s ease;
+}
+
+.delete:active{
+    filter: brightness(1) contrast(2) blur(0.1px);
+}
+.delete:hover{
+    transform: scale(1.1);
+}
+
+.comment:hover{
+    transform: scale(1.05);
+    
+}

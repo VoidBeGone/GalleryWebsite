@@ -1,0 +1,24 @@
+html {
+    overflow: -moz-scrollbars-vertical;
+}
+/* this code was taken from google fonts
+https://fonts.google.com/selection/embed
+*/
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+    
+  body {
+    background-image:url('../media/background.jpeg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:repeat;
+    font-family: "Pacifico",cursive;
+    font-size: 14px;
+    color: #3c3d3f;
+    text-align: left;
+    max-width: 100%;
+    margin: auto;
+  }

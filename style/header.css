@@ -1,0 +1,45 @@
+#Gallery .container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    align-items:center;
+    justify-items:center;
+    font-family:"Pacifico",cursive;
+    color:#6FB3B8;
+    border-bottom:1px solid rgb(111, 179, 184, 0.25)
+
+}
+#Gallery .container .box2{
+    text-align:center;
+    font-size:2.75vw; 
+    margin:0;
+    line-height: 0.75; 
+    transition: transform 0.3s ease
+}
+#Gallery .container .box1, #Gallery .container  .box3{
+    text-align:center;
+    font-size:2.35vw;
+    margin:0;
+    line-height: 0.75; 
+    transition: transform 0.3s ease
+}
+#Gallery .container .box1{
+    position: relative;
+    z-index:10;
+    cursor:pointer;
+}
+#Gallery .container .box3 a, #Gallery .container .box3 a:visited, #Gallery .container .box3 a:hover, #Gallery .container .box3 a:active{
+    color:#6FB3B8;
+    text-decoration:none;
+}
+
+
+.box3:hover, .box1:hover, .box2:hover{
+    transform:scale(1.07);
+}
+
+/*
+In the future add some code that makes the Add Image button a little easier
+to click when the screen is small
+rather with media stuff or javascript and media stuff
+since when its like 400x 400 its kinda hard to press lowkey
+*/

@@ -1,0 +1,24 @@
+.comments_switch{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+}
+
+.next_10, .past_10{
+    width:25px ;
+    height:25px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:100%;
+    cursor:pointer;
+    background-image:url("../media/updown.png");
+    margin:10px;
+    line-height: 1;
+}
+.next_10{
+    rotate:180deg;
+    line-height: 1;
+
+}
